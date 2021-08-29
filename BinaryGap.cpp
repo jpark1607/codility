@@ -1,4 +1,6 @@
-int solution(int N) {
+int
+solution(int N)
+{
     int max = 0, cnt = 0;
 
     /* find first 0x1 from bottom */
