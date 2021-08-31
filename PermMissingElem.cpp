@@ -13,7 +13,7 @@ solution(vector<int> &A)
         return 1;
 
     arr_cnt = (N / 8) + 1;
-    arr = (char *)calloc(0x0, arr_cnt);
+    arr = new char[arr_cnt] {0};
 
     /* fill 0x1 into current number pos */
     for (int i = 0; i < N; i++) {
@@ -41,6 +41,6 @@ solution(vector<int> &A)
         }
     }
 
-    free(arr);
+    delete arr;
     return (res + 1);
 }
