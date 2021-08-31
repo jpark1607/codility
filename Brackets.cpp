@@ -13,15 +13,18 @@ solution(string &S)
             st.push(*it);
             break;
         case ')':
-            if (st.top() != '(') return 0;
+            if (st.top() != '(')
+                return 0;
             st.pop();
             break;
         case '}':
-            if (st.top() != '{') return 0;
+            if (st.top() != '{')
+                return 0;
             st.pop();
             break;
         case ']':
-            if (st.top() != '[') return 0;
+            if (st.top() != '[')
+                return 0;
             st.pop();
             break;
         default:

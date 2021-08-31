@@ -13,8 +13,10 @@ solution(vector<int> &A)
     for (int i = 0; i < size - 1; i++) {
         sum -= A[i] * 2;
         res = abs(sum);
-        if (min > res) min = res;
-        if (min == 0) return 0;
+        if (min > res)
+            min = res;
+        if (min == 0)
+            return 0;
     }
 
     return min;
