@@ -33,5 +33,6 @@ solution(vector<int> &A)
             }
         }
     }
+
     return -1;
 }
