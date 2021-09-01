@@ -9,7 +9,6 @@ solution(vector<int> &A)
     int size = A.size();
     int res;
 
-
     for (int i = 0; i < size - 1; i++) {
         sum -= A[i] * 2;
         res = abs(sum);
