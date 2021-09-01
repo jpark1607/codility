@@ -6,7 +6,7 @@ solution(string &S)
     stack<char> st;
 
     for (string::iterator it = S.begin(); it != S.end(); ++it) {
-        switch(*it) {
+        switch (*it) {
         case '(':
         case '{':
         case '[':
