@@ -14,6 +14,7 @@ solution(string &S, vector<int> &P, vector<int> &Q)
             switch (S[j]) {
                 case 'A':
                     min = (min > 1) ? 1 : min;
+                    j = Q[i]; // indirect loop out
                     break;
                 case 'C':
                     min = (min > 2) ? 2 : min;
