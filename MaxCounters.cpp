@@ -31,7 +31,8 @@ solution(int N, vector<int> &A)
     return v;
 }
 
-// v1 : 77
+/* v1 : 77
+ * performance problem */
 vector<int>
 solution(int N, vector<int> &A)
 {
