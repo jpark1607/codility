@@ -1,4 +1,5 @@
-// v1 : 37
+/* v1 : 37
+ * performance problem */
 int
 solution(int A, int B, int K)
 {
