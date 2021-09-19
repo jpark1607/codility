@@ -1,4 +1,4 @@
-/*
+/* Lesson 2.1
  * 1. 문제:
  *   어떤 vector A가 있을 때, K회 만큼 오른쪽으로 회전한 뒤의 결과를 vector로 return한다.
  *
