@@ -1,4 +1,4 @@
-/*
+/* Lesson 8.2
  * 1. 문제:
  *   어떤 vector A가 있을 때, index S 시점을 기준으로 (0) ~ (S)까지의 부분 vector와 (S+1) ~ (N)까지의 부분 vector의 leader가
  *   같은 경우의 수를 모두 찾아라.
