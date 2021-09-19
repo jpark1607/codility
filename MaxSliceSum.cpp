@@ -1,6 +1,6 @@
 #include <algorithm>
 
-/*
+/* Lesson 9.2
  * 1. 문제:
  *   vector A에서 부분합 중 최대의 값을 구하여라.
  *
