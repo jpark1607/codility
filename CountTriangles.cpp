@@ -1,6 +1,6 @@
 #include <algorithm>
 
-/*
+/* Lesson 15.3
  * 1. 문제:
  *   vector A에서 index P, Q, R이 삼각형을 이루는(즉, A[P] + A[Q] > A[R]) 모든 경우의 수를 출력하라.
  *
