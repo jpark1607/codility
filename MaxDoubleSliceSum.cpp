@@ -2,50 +2,45 @@
 
 /* Lesson 9.3
  * 1. 문제:
- *   vector A에서
+ *   vector A에서 [X와 Y 사이의 합과, Y와 Z사이의 합]의 합 중 최대값을 구하시오.
  *
  * 2. 아이디어:
- *   전체 범위에 대한 합은 Kadane 알고리즘을 쓴다.
- *   이 범위 내에서 최소의 값을 기억하고 있으면서, 나중에 빼 주도록 한다.
+ *   Y를 기점으로 왼쪽과 오른쪽의 합들 중 가장 큰 수치를 구하는 방식으로 진행한다.
+ *   Kadane 알고리즘을 쓰되, global_max 비교 시 0과 비교하면 되는 것이다.
  *
  * 3. 코드:
- *   [A]
- *   [B]
+ *   [A] 각 방향의 부분합의 최대값을 vector에 저장한다.
+ *     [A-1] Y 기준 왼쪽의 부분합의 최대값들을 구한다.
+ *     [A-2] Y 기준 오른쪽의 부분합의 최대값들을 구한다.
+ *   [B] i의 위치를 Y로 놓고, Y의 왼쪽의 부분합의 값과 오른쪽의 부분합의 값을 더해보면서 최대값을 구한다.
  *
- * 4. 진행 중: 38%
- *   The following issues have been detected: wrong answers.
- *     For example, for the input [0, 10, -5, -2, 0] the solution returned a wrong answer (got 15 expected 10).
+ * 4. 진행 중: 62%
+ *
  * */
 int
 solution(vector<int> &A)
 {
     int size = A.size();
-    int local_max, global_max;
-    int i, min = -10001;
+    vector<int> left(size, 0);
+    vector<int> right(size, 0);
+    int max_val = 0;
+    int i, j;
 
     if (size == 3)
         return 0;
 
-    local_max = A[1];
-    global_max = A[1];
-    min = A[1];
-
-    for (i = 3; i < size; i++) {
-        if (min > A[i - 1])
-            min = A[i - 1];
-
-        /* local_max = max(A[i], local_max + A[i]) */
-        if (A[i - 1] > (local_max + A[i - 1] - min)) {
-            min = A[i - 1];
-            local_max = A[i - 1];
-        }
-        else {
-            local_max += A[i - 1];
-        }
-
-        global_max = max(global_max, local_max);
-
+    /* [A] */
+    for (i = 1, j = size - 2; (i < size - 1) && (j > 1); i++, j--) {
+        /* [A-1] */
+        left[i] = max(A[i] + left[i - 1], 0);
+        /* [A-2] */
+        right[j] = max(A[j] + right[j + 1], 0);
     }
 
-    return global_max - min;
+    /* [B] */
+    for (i = 1; i < size - 1; i++) {
+        max_val = max(left[i - 1] + right[i + 1], max_val);
+    }
+
+    return max_val;
 }
