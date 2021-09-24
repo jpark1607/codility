@@ -1,4 +1,5 @@
 #include <cmath>
+#include <algorithm>
 
 /* Lesson 10.3
  * 1. 문제:
@@ -20,8 +21,7 @@
  *     [B-4] 여유분이 0 이상이면(정확히는 0에서만 답이 된다) 그 값을 return한다.
  *
  * 4. 참고사항:
- *   제곱근 뿐만 아니라 size와 비교하여 min을 씌운 것을 하면 더 최적화되지 않을까 싶다.
- *   -> min(sqrt(peak[size - 1] - peak[0]) + 1, peak.size())
+ *   제곱근 뿐만 아니라 size와 비교하여 min을 씌운 것을 하면 더 최적화할 수 있다. (아래 주석 부분 참고)
  *   어차피 거리가 멀어도 peak의 수보다 더 많이는 못 꽂으니까.
  * */
 int
@@ -43,14 +43,17 @@ solution(vector<int> &A)
     }
 
     size = peak.size();
-
     if (size == 0 || size == 1 || size == 2)
         return size;
 
-    /* [B] */
     /* TODO 아래 부분을 잘 기억하자.
-     *  for (i = sqrt(peak[size - 1] - peak[0]) + 1; i >= 2; i--) */
-    for (i = size; i >= 2; i--) {
+     *      for (i = sqrt(peak[size - 1] - peak[0]) + 1; i >= 2; i--)
+     *      아래 내용도 된다.
+     *      for (i = min((int)(sqrt(peak[size - 1] - peak[0]) + 1), size); i >= 2; i--)
+     */
+    /* [B] */
+    for (i = min((int)(sqrt(peak[size - 1] - peak[0]) + 1), size); i >= 2; i--) {
+    //for (i = size; i >= 2; i--) {
         /* [B-1] */
         buf = size - i;
         pos = peak[0];
