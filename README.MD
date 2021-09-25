@@ -64,7 +64,8 @@
 ### Exercise 4
 ####
 ### Exercise 5
-####
+#### 5.1 ParkingBill
+#### 5.2 ParityDegree
 ### Exercise 6
 ####
 ### Exercise 7
