@@ -7,7 +7,7 @@
  * };
  */
 
-/* Lesson X.X Case #
+/* Exercise 4.3
  * 1. 문제:
  *   binary tree의 최대 높이를 구하여라.
  *
