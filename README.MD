@@ -65,6 +65,10 @@
 ####
 ### Exercise 5
 ####
+### Exercise 6
+####
+### Exercise 7
+####
 
 ## Complete
 #### 4.3 MaxCounters
