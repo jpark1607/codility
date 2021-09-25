@@ -62,20 +62,24 @@
 ### Exercise 3
 ####
 ### Exercise 4
-####
+#### 4.2 StrSymmetryPoint
+#### 4.3 TreeHeight
 ### Exercise 5
 #### 5.1 ParkingBill
 #### 5.2 ParityDegree
 ### Exercise 6
-####
+#### 6.1 SqlSum
 ### Exercise 7
-####
+#### 7.1 ArrListLen
 
 ## Complete
+### Lessons
 #### 4.3 MaxCounters
 #### 5.3 GenomicRangeQuery
 #### 5.4 MinAvgTwoSlice
 #### 6.4 NumberOfDiscIntersections
+### Exercises
+####
 
 ## To Do & On Going *
 ### Lessons
@@ -98,7 +102,16 @@
 #### 3.2 SocksLaundering
 #### 3.3 ArrayRecovery
 #### 3.4 DiamondsCount
-
+#### 4.1 FirstUnique
+#### 4.4 ArrayInversionCount
+#### 4.5 DisappearingPairs
+#### 4.6 PolygonConcavityIndex
+#### 5.3 ThreeLetters
+#### 6.2 SqlEventsDelta
+#### 6.3 SqlWorldCup
+#### 7.2 CountBoundedSlices
+#### 7.3 TreeLongestZigZag
+#### 7.4 CountriesCount
 
 # Searched : Study about the idea
 ## 5.3 GenomicRangeQuery (v3)
