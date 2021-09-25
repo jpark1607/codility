@@ -56,7 +56,7 @@
 ### Lesson 17 Dynamic programming
 ####
 ### Exercise 1
-####
+#### 1.1 LongestPassword
 ### Exercise 2
 ####
 ### Exercise 3
@@ -87,7 +87,6 @@
 #### 17.1 NumberSolitaire
 #### 17.2 MinAbsSum
 ### Exercises
-#### 1.1 LongestPassword
 #### 1.2 FloodDepth
 #### 1.3 SlalomSkiing
 #### 2.1 RectangleBuilderGreaterArea
