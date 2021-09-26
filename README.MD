@@ -39,10 +39,12 @@
 #### 10.4 Peaks
 ### Lesson 11 Sieve of Eratosthenes
 #### 11.1 CountNonDivisible
+#### 11.2 CountSemiprimes
 ### Lesson 12 Euclidean algorithm
 #### 12.1 ChocolatesByNumbers
+#### 12.2 CommonPrimeDivisors
 ### Lesson 13 Fibonacci numbers
-####
+#### 13.1 FibFrog
 ### Lesson 14 Binary search algorithm
 ####
 ### Lesson 15 Caterpillar method
@@ -81,11 +83,8 @@
 ### Exercises
 ####
 
-## To Do & On Going *
+## To Do & On Going*
 ### Lessons
-#### 11.2 CountSemiprimes *
-#### 12.2 CommonPrimeDivisors
-#### 13.1 FibFrog *
 #### 13.2 Ladder
 #### 14.1 MinMaxDivision
 #### 14.2 NailingPlanks
@@ -118,5 +117,3 @@
 ### Make arrays for each letter, cumulative values.
 ## 5.4 MinAvgTwoSlice (v2)
 ### The result can be only array of 2 or 3 indexes.
-## 10.3 Flags
-### sqrt
