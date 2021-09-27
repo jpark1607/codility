@@ -45,6 +45,7 @@
 #### 12.2 CommonPrimeDivisors
 ### Lesson 13 Fibonacci numbers
 #### 13.1 FibFrog
+#### 13.2 Ladder
 ### Lesson 14 Binary search algorithm
 ####
 ### Lesson 15 Caterpillar method
@@ -85,7 +86,6 @@
 
 ## To Do & On Going*
 ### Lessons
-#### 13.2 Ladder
 #### 14.1 MinMaxDivision
 #### 14.2 NailingPlanks
 #### 17.1 NumberSolitaire
