@@ -47,7 +47,7 @@
 #### 13.1 FibFrog
 #### 13.2 Ladder
 ### Lesson 14 Binary search algorithm
-####
+#### 14.1 MinMaxDivision
 ### Lesson 15 Caterpillar method
 #### 15.1 AbsDistinct
 #### 15.2 CountDistinctSlices
@@ -86,7 +86,6 @@
 
 ## To Do & On Going*
 ### Lessons
-#### 14.1 MinMaxDivision
 #### 14.2 NailingPlanks
 #### 17.1 NumberSolitaire
 #### 17.2 MinAbsSum
@@ -117,3 +116,5 @@
 ### Make arrays for each letter, cumulative values.
 ## 5.4 MinAvgTwoSlice (v2)
 ### The result can be only array of 2 or 3 indexes.
+## 14.1 MinMaxDivision
+### Binary search the total sum
