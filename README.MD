@@ -86,7 +86,7 @@
 
 ## To Do & On Going*
 ### Lessons
-#### 14.2 NailingPlanks
+#### 14.2 NailingPlanks*
 #### 17.1 NumberSolitaire
 #### 17.2 MinAbsSum
 ### Exercises
